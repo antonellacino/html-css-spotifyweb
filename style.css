@@ -1,0 +1,63 @@
+/*Regole generali*/
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*Regole barra sinistra*/
+#sx-fix-bar{
+  /*debug*/
+  height: 100vh;
+  background-color: pink;
+  /*fine debug*/
+  width: 200px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/*Regole main*/
+#header-fix-bar{
+  /*debug*/
+  width: 100vw;
+  background-color: #90CDF4;
+  /*fine debug*/
+  height: 100px;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+/*Regole parte centrale*/
+#central-section{
+  /*debug*/
+  background-color:#ACF3A5;
+  /*fine debug*/
+  /*width: calc(100%-200px);
+  height: calc(100%-200px);*/
+  margin-top: 100px;
+  margin-left: 200px;
+  height: 100vh;
+}
+
+
+
+/*Regole footer*/
+#bottom-fix-bar{
+  /*debug*/
+  background-color: grey;
+  /*fine debug*/
+  z-index: 2;
+  height: 100px;
+  width: 100vw;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
