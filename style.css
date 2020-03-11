@@ -4,17 +4,23 @@
   margin: 0;
   box-sizing: border-box;
 }
+body{
+  color: white;
+}
 .margin-bottom10{
   margin-bottom: 10px;
 }
-
-
+ul{
+  list-style: none;
+}
+h5{
+  color: grey;
+}
 
 /*Regole barra sinistra*/
 #sx-fix-bar{
   height: calc(100vh - 100px);
   background-color: black;
-  color: white;
   width: 200px;
   display: flex;
   flex-direction: column;
@@ -27,7 +33,7 @@
 #sx-fix-bar li a{
   text-decoration: none;
   font-size: 14px;
-  line-height: 30px;
+  line-height: 20px;
   color: grey;
 }
 .logo{
@@ -35,11 +41,14 @@
   margin: 10px 0;
   align-self: flex-start;
   flex-shrink: 0;
-
+}
+.flex{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .icons{
   height: 25px;
-  display: inline-block;
   margin-right: 10px;
 }
 .icon-plus{
@@ -69,8 +78,21 @@ div#header-fix-bar button{
   color: white;
   align-self: center;
 }
-
-
+.nav{
+  display: flex;
+  justify-content: center;
+  height: 80px;
+  width: auto;
+}
+.nav ul li{
+  display: inline-block;
+  padding: 20px;
+  color: grey;
+}
+.nav a{
+  text-decoration: none;
+  display: inline-block;
+}
 
 /*Regole parte centrale*/
 #central-section{
@@ -80,6 +102,23 @@ div#header-fix-bar button{
   margin-left: 200px;
   height: 100vh;
 }
+.container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 20px 20px 0 0;
+}
+.container img{
+  width: 180px;
+}
+div.locandina{
+  flex-basis: calc((100vw/6)-200px);
+  /*width: 15%;*/
+}
+
+
+
 
 
 
