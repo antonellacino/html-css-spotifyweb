@@ -61,13 +61,19 @@ a{
   justify-content: space-between;
   padding-bottom: 10px;
 }
+img.profile{
+  height: 20px;
+  margin-right: 10px;
+}
 .logo{
   height: 40px;
   margin: 20px 0;
   align-self: flex-start;
   flex-shrink: 0;
 }
-
+.logo2{
+  display: none;
+}
 .icons{
   height: 25px;
   margin-right: 10px;
@@ -98,17 +104,16 @@ div#header-fix-bar button{
   border-radius: 50px;
   color: white;
   align-self: center;
+  margin-right: 10px;
 }
 .nav{
   display: flex;
   justify-content: center;
-  height: 80px;
   margin: 10px 0;
-
 }
 .nav ul li{
   display: inline-block;
-  padding: 20px;
+  padding: 10px;
 }
 
 
@@ -197,7 +202,117 @@ div.column{
   border-radius: 3px;
 }
 
-img.profile{
-  width: 15px;
-  margin-right: 5px;
+
+
+/*madia query*/
+@media screen and (max-width: 1033px){
+  div.nav{
+    margin: 15px 0;
+    text-align: center;
+  }
+}
+
+
+@media screen and (min-width: 621px) and (max-width: 865px){
+  div.played{
+    width: 200px;
+  }
+  div.played2{
+    width: 50px;
+  }
+  div.audio-bar{
+    width: 60px;
+    margin-right: 10px;
+  }
+  div.audio-bar2{
+    width: 10px;
+  }
+}
+
+
+@media screen and (min-width: 520px) and (max-width: 650px){
+  #sx-fix-bar{
+    width: 130px;
+  }
+  #central-section{
+    margin-left: 130px;
+  }
+  #header-fix-bar{
+    width: calc(100vw - 130px);
+  }
+  .logo{
+    height: 30px;
+  }
+  div.played{
+    width: 180px;
+  }
+  div.played2{
+    width: 40px;
+  }
+  div.audio-bar{
+    width: 50px;
+    margin: 0 5px;
+  }
+  div.audio-bar2{
+    width: 8px;
+  }
+  #bottom-fix-bar img{
+    height: 40px;
+    margin: 0 5px;
+  }
+  #bottom-fix-bar h4{
+    font-size: 11px;
+  }
+  #bottom-fix-bar h5{
+    font-size: 10px;
+  }
+  #bottom-fix-bar div.flex i {
+    margin: 0 3px 0 10px;
+    font-size: 13px;
+  }
+}
+
+
+@media screen and (max-width: 519px){
+  #sx-fix-bar{
+    width: 50px;
+  }
+  #central-section{
+    margin-left: 50px;
+  }
+  #header-fix-bar{
+    width: calc(100vw - 50px);
+  }
+  #list-profile div.flex{
+    justify-content: center;
+  }
+  .logo{
+    display: none;
+  }
+  .logo2{
+    display: block;
+    height: 30px;
+    margin: 10px 5px 10px 0;
+  }
+  div.margin-bottom20{
+    margin-left: 5px;
+  }
+  #sx-fix-bar a, h4,h5, span, li i.icon-plus{
+    display: none;
+  }
+  #bottom-fix-bar img{
+    height: 40px;
+    margin: 0 5px;
+  }
+  #bottom-fix-bar h4{
+    font-size: 11px;
+  }
+  #bottom-fix-bar h5{
+    font-size: 10px;
+  }
+  #bottom-fix-bar div.flex i {
+    margin: 0 3px 0 10px;
+    font-size: 13px;
+  }
+
 }
