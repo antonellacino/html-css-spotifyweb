@@ -49,6 +49,9 @@ a{
   line-height: 20px;
   color: grey;
 }
+div.margin-bottom20 a:hover{
+  border-left: 3px solid green;
+}
 #list-profile{
   height: calc(100vh - 100px);
   display: flex;
@@ -108,7 +111,9 @@ div#header-fix-bar button{
   display: inline-block;
   padding: 10px;
 }
-
+.nav ul li:hover{
+  border-bottom: 2px solid green;
+}
 /*Regole parte centrale*/
 #central-section{
   background-color:#121212;
@@ -129,7 +134,27 @@ div#header-fix-bar button{
 }
 div.locandina{
   flex-basis: calc((100vw/6) - 200px);
+  position: relative;
 }
+div.cover{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding: 30%;
+  font-size: 50px;
+  background-color: black;
+  opacity: 0.3;
+}
+div.cover i{
+  opacity: 1;
+}
+div.layover:hover .cover{
+  display: block;
+}
+
 .circle{
   height: 180px;
   width: 180px;
