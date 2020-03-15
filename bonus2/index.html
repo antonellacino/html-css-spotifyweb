@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Zoom</title>
-  <link rel="stylesheet" href="fontawesome-free-5.12.1-web/css/all.css">
+  <link rel="stylesheet" href="../fontawesome-free-5.12.1-web/css/all.css">
   <link rel="stylesheet" href="zoom-style.css">
 </head>
   <body>
@@ -14,7 +14,7 @@
           <!--barra superiore--------------------------------------------->
           <div class="title clear margin-bottom20">
             <span>Total non-video partecipants: 4</span>
-            <div id="div-float-left">
+            <div id="div-position-absolute">
               <button type="button" name="button" class="btn btn-grande"><i class="fas fa-calendar-times"></i>Speaker view</button>
               <button type="button" name="button" class="btn"><i class="fas fa-calendar-times"></i></button>
             </div>
@@ -74,20 +74,51 @@
           </div>
         </div>
         <!--sezione comandi------------------------------------------------>
-        <div id="comandi">
-          <div class="audio">
-            <i class="fas fa-microphone-slash"></i>
-            <i class="fas fa-sort-up"></i>
-            <i class="fas fa-video"></i>
-            <i class="fas fa-sort-up"></i>
+        <footer>
+          <div class="comandi">
+            <div class="column">
+              <i class="fas fa-microphone-slash"></i>
+              <span>Unmute</span>
+            </div>
+            <div class="column">
+              <i class="fas fa-sort-up"></i>
+            </div>
+            <div class="column">
+              <i class="fas fa-video"></i>
+              <span>Microphone</span>
+            </div>
+            <div class="column">
+              <i class="fas fa-sort-up"></i>
+            </div>
           </div>
-          <div class="audio">
-            <i class="fas fa-user-plus"></i>
+          <!--sezione comandi barra ventrale-------------------------->
+          <div class="central-comands comandi">
+            <div class="column">
+              <i class="fas fa-user-plus"></i>
+              <span>Invite</span>
+            </div>
+            <div class="column">
+              <i class="fas fa-user-friends"></i>
+              <span>Manage Partecipants</span>
+            </div>
+            <div class="column">
+              <i class="fas fa-desktop green"></i>
+              <span>Share Screen</span>
+            </div>
+            <div class="column">
+              <i class="far fa-comment-dots"></i>
+              <span>Chat</span>
+            </div>
+            <div class="column">
+              <i class="fas fa-record-vinyl"></i>
+              <span>Record</span>
+            </div>
           </div>
-          <div class="audio">
 
+          <div class="comandi">
+            <span class="red text-right">End Meeting</span>
           </div>
-        </div>
+        </footer>
       </div>
     </main>
   </body>
